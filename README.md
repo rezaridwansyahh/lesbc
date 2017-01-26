@@ -1,2 +1,3 @@
-# lesbc
-Iisinya tentang apa aja yang gue pelajarin
+# Les Bangsa Cerdas
+
+Isinya tentang apa yang sudah dipelajari tiap harinya di bangsacerdas.com 
