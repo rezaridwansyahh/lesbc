@@ -1,0 +1,328 @@
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <div id="carouselku" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target='#carouselku' data-slide-to='0' class="active"></li>
+          <li data-target='#carouselku' data-slide-to='1'></li>
+          <li data-target='#carouselku' data-slide-to='2'></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/jajo.jpg" alt="first-slide" />
+          </div>
+          <div class="item">
+            <img src="img/sliderunj.jpg" alt="first-slide" />
+          </div>
+          <div class="item">
+            <img src="img/sliderwisuda.jpg" alt="first-slide" />
+          </div>
+          <a class="carousel-control left" href="#carouselku" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control right" href="#carouselku" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <h1>Form Biasa</h1>
+        <form role ="form">
+           <div class = "form-group">
+              <label for = "name">Name</label>
+              <input type = "text" class = "form-control" id = "name" placeholder = "Enter Name">
+           </div>
+           <div class = "form-group">
+              <label for = "inputfile">File input</label>
+              <input type = "file" id = "inputfile">
+              <p class = "help-block">Example block-level help text here.</p>
+           </div>
+           <div class = "checkbox">
+              <label><input type = "checkbox"> Check me out</label>
+           </div>
+           <button type = "submit" class = "btn btn-danger">Submit</button>
+        </form>
+      </div>
+      <div class="row">
+          <h1>Form Horizontal</h1>
+          <form class = "form-horizontal" role = "form">
+             <div class = "form-group">
+                <label for = "firstname" class = "col-sm-2 control-label">First Name</label>
+                <div class = "col-sm-10">
+                   <input type = "text" class = "form-control" id = "firstname" placeholder = "Enter First Name">
+                </div>
+             </div>
+             <div class = "form-group">
+                <label for = "lastname" class = "col-sm-2 control-label">Last Name</label>
+                <div class = "col-sm-10">
+                   <input type = "text" class = "form-control" id = "lastname" placeholder = "Enter Last Name">
+                </div>
+             </div>
+             <div class = "form-group">
+                <div class = "col-sm-offset-2 col-sm-10">
+                   <div class = "checkbox">
+                      <label><input type = "checkbox"> Remember me</label>
+                   </div>
+                </div>
+             </div>
+             <div class = "form-group">
+                <div class = "col-sm-offset-2 col-sm-10">
+                   <button type = "submit" class = "btn btn-danger">Sign in</button>
+                </div>
+             </div>
+          </form>
+          <div class="col-md-offset-1 col-md-10">
+            <div class="alert alert-success alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Yeah berhasil cie cie
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <table class="table table-bordered table-hover table-responsive">
+          <caption>
+            Layout Table Dasar
+          </caption>
+          <thead>
+            <tr>
+              <th>
+                Name
+              </th>
+              <th>
+                City
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Dimas
+              </td>
+              <td>
+                Medan
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Dimas
+              </td>
+              <td>
+                Medan
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <h2>Pojok Tumpul</h2>
+          <img src="img/images.jpg" class="img-thumbnail img-circle" alt="gambar" width="500" height="500" />
+      </div>
+      <div class="row">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Judul Panel</h3>
+          </div>
+          <div class="panel-body">
+            Contoh Panel Biasa
+          </div>
+          <div class="panel-footer">
+            Akhir Panel
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="well">
+          Contoh well dipake dalem berbagai kasus
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"> Launch Demo Modal</button>
+      </div>
+      <br /><br />
+      <div class = "modal fade" id = "myModal" tabindex = "-1" role = "dialog"
+        aria-labelledby = "myModalLabel" aria-hidden = "true">
+         <div class = "modal-dialog">
+            <div class = "modal-content">
+               <div class = "modal-header">
+                  <button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true">
+                        &times;
+                  </button>
+                  <h4 class = "modal-title" id = "myModalLabel">
+                     Judul Modal
+                  </h4>
+               </div>
+               <div class = "modal-body">
+                  Isi text modal
+               </div>
+               <div class = "modal-footer">
+                  <button type = "button" class = "btn btn-default" data-dismiss = "modal">
+                     Close
+                  </button>
+                  <button type = "button" class = "btn btn-primary">
+                     Submit
+                  </button>
+               </div>
+            </div><!-- /.modal-content -->
+         </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <div class="row">
+        <div class = "panel-group" id = "accordion">
+           <div class = "panel panel-primary">
+              <div class = "panel-heading">
+                 <h4 class = "panel-title">
+                    <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapseOne">
+                       Bagian Satu
+                    </a>
+                 </h4>
+              </div>
+              <div id = "collapseOne" class = "panel-collapse collapse in">
+                 <div class = "panel-body">
+                    Data Collapse yang pertama.
+                 </div>
+              </div>
+           </div>
+           <div class = "panel panel-success">
+              <div class = "panel-heading">
+                 <h4 class = "panel-title">
+                    <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapseTwo">
+                       Bagian Dua
+                    </a>
+                 </h4>
+              </div>
+              <div id = "collapseTwo" class = "panel-collapse collapse">
+                 <div class = "panel-body">
+                    Data Collapse yang kedua.
+                 </div>
+              </div>
+           </div>
+           <div class = "panel panel-danger">
+              <div class = "panel-heading">
+                 <h4 class = "panel-title">
+                    <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapseThree">
+                       Bagian tiga
+                    </a>
+                 </h4>
+              </div>
+              <div id = "collapseThree" class = "panel-collapse collapse">
+                 <div class = "panel-body">
+                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                       sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+      <div class="row">
+          <h1>Contoh Penggunaan</h1>
+          <div class="col-md-12">
+              <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a data-toggle="tab" href="#tab1">Beranda</a></li>
+                <li role="presentation"><a data-toggle="tab" href="#tab2">Profile</a></li>
+                <li role="presentation"><a data-toggle="tab" href="#tab3">Pesan</a></li>
+              </ul>
+              <div class="tab-content">
+                <div id="tab1" class="tab-pane fade in active">
+                  <h3>Beranda</h3>
+                  <p>Isi tab beranda.</p>
+                </div>
+                <div id="tab2" class="tab-pane fade">
+                  <h3>Profile</h3>
+                  <p>Isi Tab profile.</p>
+                </div>
+                <div id="tab3" class="tab-pane fade">
+                  <h3>Pesan</h3>
+                  <p>Isi tab pesan.</p>
+                </div>
+              </div>
+          </div>
+      </div>
+      <br /><br />
+      <i class="fa fa-search" style="font-size:48px;color:#0099ff"></i>
+      <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+      <span class="sr-only">Loading....</span>
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-car fa-stack-1x"></i>
+        <i class="fa fa-ban fa-stack-2x text-danger"></i>
+      </span>
+      <br /><br />
+    </div>
+    <!--
+      data-dismiss="alert"
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hello World</h1>
+      </div>
+    </div> -->
+    <!-- <div class="row">
+        <div class="col-md-4">
+            Kolom 1
+        </div>
+        <div class="col-md-4">
+            Kolom 2
+        </div>
+        <div class="col-md-4">
+            Kolom 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          Kolom 1
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          Kolom 2
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          Kolom 3
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          Kolom 4
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          Kolom 5
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+          Kolom 6
+        </div>
+      </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

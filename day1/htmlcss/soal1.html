@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <form>
+      <label for="vara">Variabel A</label>
+      <input type="text" name="vara" />
+      <label for="vara">Variabel B</label>
+      <input type="text" name="varb" />
+      <label for="operation">Operation</label>
+      <select name="operator">
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+        <option value="kali">x</option>
+        <option value="modulus">%</option>
+        <option value="bagi">/</option>
+      </select>
+      <input type="text" value="" id="proses" name="hasil" disabled=""/>
+      <input type="button" name="proses" onclick="kali()" value="proses">
+    </form>
+
+    <script>
+      function kali(){
+        var a = document.getElementsByName("vara")[0].value;
+        var b = document.getElementsByName("varb")[0].value;
+        var operator = document.getElementsByName("operator")[0].value;
+        if(operator=="kali"){
+          document.getElementById("proses").value = a*b;
+        }else if (operator=="plus") {
+          document.getElementById("proses").value= parseInt(a)+parseInt(b);
+        }else if (operator=="minus"){
+          document.getElementById("proses").value=a-b;
+        }else if (operator=="bagi"){
+          document.getElementById("proses").value=a/b;
+        }else if (operator=="modulus"){
+          document.getElementById("proses").value=a%b;
+        }
+
+      }
+    </script>
+  </body>
+</html>

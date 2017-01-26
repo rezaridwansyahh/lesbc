@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+  </head>
+  <body>
+    <input type="button" value="Keluarin" id="button" />
+
+    <div id="tempat">
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $("#button").click(function(){
+          $.ajax({
+            type:"get",
+            url:"reza.json",
+            success: function(data){
+              var nama = data.name;
+              $("#tempat").html(data.name + "<br />" + data.age + "<br />" + data.city);
+              console.log(data);
+            }
+          });
+          // $("#tempat").load("reza.json");
+        });
+      });
+    </script>
+  </body>
+</html>

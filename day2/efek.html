@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Efek jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Bahan Makanan</h1>
+    <form>
+      <table>
+        <tr>
+          <td>
+            Bahan Makanan
+          </td>
+          <td>
+            <input type="text" id="bahan" />
+          </td>
+        </tr>
+      </table>
+      <input type="button" id="tambah" value="tambah" />
+    </form>
+
+    <ol>
+
+    </ol>
+    <script>
+    $(document).ready(function(){
+      $("#tambah").click(function(){
+        var bahan = $("#bahan").val();
+        $("ol").append("<li>"+bahan+"</li>");
+      });
+    });
+    </script>
+  </body>
+</html>

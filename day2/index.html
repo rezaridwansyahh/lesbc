@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Utama</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>
+            Nama
+          </td>
+          <td>
+            <input type="text" id="nama" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Status
+          </td>
+          <td>
+            <input type="text" id="status" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kelamin
+          </td>
+          <td>
+            <input type="text" id="kelamin" />
+          </td>
+        </tr>
+      </table>
+
+    </form>
+
+    <script>
+    $(document).ready(function(){
+        $("#kelamin").blur(function(){
+          var kelamin = $("#kelamin").val();
+          var nama = $("#nama").val();
+          var status = $("#status").val();
+          console.log("kelamin :" + kelamin + "\n" + "nama :" + nama + "\n" + "status :" + status);
+        });
+    });
+    </script>
+  </body>
+</html>

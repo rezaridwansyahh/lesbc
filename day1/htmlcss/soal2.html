@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title> Soal nomor 2</title>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td>
+            Mouse
+          </td>
+          <td>
+            <input type="number" id="qtymouse" onchange="totalmouse()" />
+          </td>
+          <td>
+            <input type="number" id="hargamouse" onchange="totalmouse()" />
+          </td>
+          <td>
+            <input type="number" id="totalmouses" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Keyboard
+          </td>
+          <td>
+            <input type="number" id="qtykeyboard" onchange="totalkey()" />
+          </td>
+          <td>
+            <input type="number" id="hargakeyboard" onchange="totalkey()" />
+          </td>
+          <td>
+            <input type="number" id="totalkeyboards" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Wifi
+          </td>
+          <td>
+            <input type="text" id="qtywifi" onchange="totwifi()" />
+          </td>
+          <td>
+            <input type="text" id="hargawifi" onchange="totwifi()"/>
+          </td>
+          <td>
+            <input type="text" id="totalwifi" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Monitor
+          </td>
+          <td>
+            <input type="text" id="qtymonitor" onchange="totmonitor()" />
+          </td>
+          <td>
+            <input type="text" id="hargamonitor" onchange="totmonitor()"/>
+          </td>
+          <td>
+            <input type="text" id="totalmonitor" />
+          </td>
+        </tr>
+
+      </table>
+
+      <table>
+        <tr>
+          <td>
+            Sub Total
+          </td>
+          <td>
+            <input type="number" id="subtotal" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Tax
+          </td>
+          <td>
+            <input type="number" id="tax" onchange="hasiltotal()" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Total
+          </td>
+          <td>
+            <input type="number" id="tot"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      function totalmouse(){
+        var subtotal = document.getElementById("subtotal").value;
+        var qtymouse = document.getElementById("qtymouse").value;
+        var hargamouse = document.getElementById("hargamouse").value;
+        document.getElementById("totalmouses").value= qtymouse * hargamouse;
+        document.getElementById("subtotal").value=  parseInt(subtotal + (qtymouse * hargamouse));
+        return qtymouse * hargamouse;
+
+      }
+      function totalkey(){
+        var subtotal = parseInt (document.getElementById("subtotal").value);
+        var qtykeyboard = document.getElementById("qtykeyboard").value;
+        var hargakeyboard = document.getElementById("hargakeyboard").value;
+        document.getElementById("totalkeyboards").value=qtykeyboard * hargakeyboard;
+        document.getElementById("subtotal").value=  parseInt(subtotal + (qtykeyboard * hargakeyboard));
+        return qtykeyboard * hargakeyboard;
+      }
+      function totwifi(){
+        var subtotal = parseInt (document.getElementById("subtotal").value);
+        var qtywifi = document.getElementById("qtywifi").value;
+        var hargawifi = document.getElementById("hargawifi").value;
+        document.getElementById("totalwifi").value=qtywifi * hargawifi;
+        document.getElementById("subtotal").value=  parseInt(subtotal + (qtywifi * hargawifi));
+        return qtywifi * hargawifi;
+      }
+      function totmonitor(){
+        var subtotal = parseInt (document.getElementById("subtotal").value);
+        var qtymonitor = document.getElementById("qtymonitor").value;
+        var hargamonitor = document.getElementById("hargamonitor").value;
+        document.getElementById("totalmonitor").value=qtymonitor * hargamonitor;
+        document.getElementById("subtotal").value=  parseInt(subtotal + (qtymonitor * hargamonitor));
+        return qtymonitor * hargamonitor;
+      }
+      function hasiltotal(){
+        var subtotal = parseInt (document.getElementById("subtotal").value);
+        var tax = subtotal * (parseInt(document.getElementById("tax").value)/100);
+        document.getElementById("tot").value= tax + subtotal;
+      }
+    </script>
+  </body>
+</html>
