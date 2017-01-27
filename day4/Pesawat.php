@@ -28,13 +28,13 @@ class Pesawat extends Kendaraan
     if($tinggi>5000 && $kecepatan>800){
     }elseif (($tinggi>=3000 && $tinggi<=5000)&&($kecepatan>=500 && $kecepatan<=800)) {
       // 20% dari hargapesawat;
-         $biop = $harga - ($harga*0.2);
+         $biop = $harga*0.2;
     }elseif ($tinggi<3000 && $kecepatan<500) {
       // 10%;
-         $biop = $harga - ($harga*0.1);
+         $biop = $harga*0.1;
     }else {
       // 5%;
-         $biop = $harga - ($harga*0.05);
+         $biop = $harga*0.05;
     }
     return $biop;
   }
